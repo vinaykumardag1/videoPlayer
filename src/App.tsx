@@ -1,11 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import { routes } from "./router/navigations";
+import { Routes, Route } from "react-router-dom"
+import { routes } from "./router/navigations"
+import Player from "./pages/Player"
+import Navbar from "./components/Navbar"
 
-import MiniPlayer from "./components/MiniPlayer";
 function App() {
   return (
     <>
-     
+      <Navbar />
       <Routes>
         {routes.map((route) => (
           <Route
@@ -14,11 +15,11 @@ function App() {
             element={route.element}
           />
         ))}
-        
       </Routes>
-      <MiniPlayer/>
+      {/* Global player: mini stays visible on every screen */}
+      <Player />
     </>
-  );
+  )
 }
 
 export default App;

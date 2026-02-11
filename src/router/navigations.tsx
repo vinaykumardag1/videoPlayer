@@ -1,6 +1,5 @@
 import Home from "../pages/Home";
-import Player from "../pages/Player";
-
+import PlayerRoute from "../pages/PlayerRoute";
 
 export const routes = [
   {
@@ -8,12 +7,9 @@ export const routes = [
     element: <Home />,
     name: "Home",
   },
-{
-  path: "/player/:slug",
-  element: <Player />,
-  name: "Player",
-}
-
-  
- 
+  {
+    path: "/player/:slug",
+    element: <PlayerRoute />,
+    name: "Player",
+  },
 ];

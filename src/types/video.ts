@@ -1,10 +1,10 @@
 export interface Video {
- 
   title: string
   thumbnailUrl: string
   slug: string
   mediaType: string
   mediaUrl: string
+  author?: string
 }
 export type MediaType = "YOUTUBE" | "VIDEO"
 
