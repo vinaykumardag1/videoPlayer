@@ -48,7 +48,7 @@ export default function VideoCard({ video, index = 0 }: Props) {
             <img
               src={video.thumbnailUrl}
               alt={video.title}
-              className="w-full max-w-[320px] h-full object-cover"
+              className="h-full object-cover"
             />
           </div>
           <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-1.5 py-0.5 rounded">
